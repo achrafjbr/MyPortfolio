@@ -1,5 +1,15 @@
 import Project from "../UI/Project";
+import Skill from "../UI/skill";
 import VuProjects from "../UI/VuProjects";
+import { Skills } from "../app/_types/skills";
+import {
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
+} from "./_dummyData/project";
 
 export default function Home() {
   return (
@@ -18,13 +28,41 @@ export default function Home() {
       <VuProjects />
 
       <section className="grid grid-cols-3 gap-6 mx-1 mt-7 ">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project
+          skills={project1.skills}
+          projectDescription={project1.projectDescription}
+          projectName={project1.projectName}
+        />
+
+        <Project
+          skills={project2.skills}
+          projectDescription={project2.projectDescription}
+          projectName={project2.projectName}
+        />
+
+        <Project
+          skills={project3.skills}
+          projectDescription={project3.projectDescription}
+          projectName={project3.projectName}
+        />
+
+        <Project
+          skills={project4.skills}
+          projectDescription={project4.projectDescription}
+          projectName={project4.projectName}
+        />
+
+        <Project
+          skills={project5.skills}
+          projectDescription={project5.projectDescription}
+          projectName={project5.projectName}
+        />
+        <Project
+          skills={project6.skills}
+          projectDescription={project6.projectDescription}
+          projectName={project6.projectName}
+        />
       </section>
     </section>
   );
 }
-
-//https://www.figma.com/make/j5c4HhXTsaMPWWoMGutGzF/Personal-Portfolio-Website?code-node-id=0-9&p=f&t=37GxjJksPa1yIvD9-0&fullscreen=1
