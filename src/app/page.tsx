@@ -1,6 +1,6 @@
-import Project from "../UI/Project";
-import Skill from "../UI/skill";
-import VuProjects from "../UI/VuProjects";
+import Project from "../UI/home/Project";
+import Skill from "../UI/home/skill";
+import VuProjects from "../UI/home/VuProjects";
 import { Skills } from "../app/_types/skills";
 import {
   project1,
@@ -9,7 +9,9 @@ import {
   project4,
   project5,
   project6,
+  showProjectByPagination,
 } from "./_dummyData/project";
+import MoreProjects from "../UI/home/MoreProjects";
 
 export default function Home() {
   return (
@@ -27,42 +29,7 @@ export default function Home() {
 
       <VuProjects />
 
-      <section className="grid grid-cols-3 gap-6 mx-1 mt-7 ">
-        <Project
-          skills={project1.skills}
-          projectDescription={project1.projectDescription}
-          projectName={project1.projectName}
-        />
-
-        <Project
-          skills={project2.skills}
-          projectDescription={project2.projectDescription}
-          projectName={project2.projectName}
-        />
-
-        <Project
-          skills={project3.skills}
-          projectDescription={project3.projectDescription}
-          projectName={project3.projectName}
-        />
-
-        <Project
-          skills={project4.skills}
-          projectDescription={project4.projectDescription}
-          projectName={project4.projectName}
-        />
-
-        <Project
-          skills={project5.skills}
-          projectDescription={project5.projectDescription}
-          projectName={project5.projectName}
-        />
-        <Project
-          skills={project6.skills}
-          projectDescription={project6.projectDescription}
-          projectName={project6.projectName}
-        />
-      </section>
+      <MoreProjects />
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import { Project } from "next/dist/build/swc/types";
 import { SkillsI } from "../_types/skills";
 
 export const project1: SkillsI = {
@@ -39,4 +40,26 @@ export const project6: SkillsI = {
   skills: ["Angular", "NestJS", "PostgreSQL", "Docker"],
   projectName: "Social Media Analytics",
   projectDescription: "Outil d'analyse de performance sur les réseaux sociaux",
+};
+
+const projectList: SkillsI[] = [
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
+];
+
+export const showProjectByPagination = (limit: number = 3) => {
+  if (limit > projectList.length) {
+    return projectList;
+  }
+  const projects: SkillsI[] = [];
+  projectList.map((project, index) => {
+    if (index + 1 <= limit) {
+      projects.push(project);
+    }
+  });
+  return projects;
 };

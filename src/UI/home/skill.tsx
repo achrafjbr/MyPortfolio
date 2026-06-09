@@ -1,4 +1,4 @@
-import { SkillI } from "../app/_types/skills";
+import { SkillI } from "../../app/_types/skills";
 
 function Skill({ skill }: SkillI): React.JSX.Element {
   return (

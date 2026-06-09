@@ -1,4 +1,4 @@
-import { SkillsI } from "../app/_types/skills";
+import { SkillsI } from "../../app/_types/skills";
 import Skill from "./skill";
 
 function Project({ skills, projectName, projectDescription }: SkillsI) {
