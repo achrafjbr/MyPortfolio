@@ -1,4 +1,3 @@
-import { Project } from "next/dist/build/swc/types";
 import { SkillsI } from "../_types/skills";
 
 export const project1: SkillsI = {
@@ -42,7 +41,7 @@ export const project6: SkillsI = {
   projectDescription: "Outil d'analyse de performance sur les réseaux sociaux",
 };
 
-const projectList: SkillsI[] = [
+export const projectList: SkillsI[] = [
   project1,
   project2,
   project3,

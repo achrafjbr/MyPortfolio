@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  project1,
-  showProjectByPagination,
-} from "../../app/_dummyData/project";
+import { showProjectByPagination } from "../../app/_dummyData/project";
 import Project from "./Project";
 
 function MoreProjects() {

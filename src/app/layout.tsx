@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className={` ${roboto.className}  h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <NavBar />
-        {children}
+        <div className="pt-[1%] px-11">{children}</div>
       </body>
     </html>
   );

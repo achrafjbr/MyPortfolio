@@ -1,21 +1,9 @@
-import Project from "../UI/home/Project";
-import Skill from "../UI/home/skill";
 import VuProjects from "../UI/home/VuProjects";
-import { Skills } from "../app/_types/skills";
-import {
-  project1,
-  project2,
-  project3,
-  project4,
-  project5,
-  project6,
-  showProjectByPagination,
-} from "./_dummyData/project";
 import MoreProjects from "../UI/home/MoreProjects";
 
 export default function Home() {
   return (
-    <section className="flex flex-col text-center items-center gap-y-1 pt-[10%] text-black  ">
+    <section className="flex flex-col text-center items-center gap-y-1 pt-[7%] text-black  ">
       <h1 className="text-5xl md:text-6xl mb-2 font-semibold  animate-text1 ">
         Bonjour, je suis Achraf El jabbar
       </h1>
