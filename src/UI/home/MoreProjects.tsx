@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   project1,
   showProjectByPagination,
@@ -9,10 +9,22 @@ import Project from "./Project";
 
 function MoreProjects() {
   const [seeMoreProjects, setMoreProjects] = useState<number>(3);
+  const scroll = useRef<HTMLDivElement>(null);
   const seeProjectsHandler = () => {
     setMoreProjects(seeMoreProjects + 3);
     showProjectByPagination(seeMoreProjects);
   };
+  const smothScrollHandler = () => {
+    scroll.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+    });
+  };
+  useEffect(() => {
+    if (seeMoreProjects > 3) {
+      smothScrollHandler();
+    }
+  }, [seeMoreProjects]);
   return (
     <section className="px-4 py-3">
       <section className="grid translate duration-300 lg:grid-cols-3 sm:grid-cols-2 gap-6 mx-1 my-7 ">
@@ -26,10 +38,12 @@ function MoreProjects() {
         ))}
       </section>
 
-      <div className="w-full flex justify-center items-center">
+      <div ref={scroll} className="w-full flex justify-center items-center">
         <div
           className=" w-[15%] p-2 cursor-pointer rounded text-black text-[0.8rem] outline-1 outline-gray-300"
-          onClick={() => seeProjectsHandler()}
+          onClick={() => {
+            seeProjectsHandler();
+          }}
         >
           Voir tous les project
         </div>
