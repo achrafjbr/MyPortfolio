@@ -24,3 +24,26 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fadeCycle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text {
+  opacity: 0.5;
+}
+
+.animate-text1 {
+  animation: fadeCycle 1s alternate;
+}
+.animate-text2 {
+  animation: fadeCycle 1s alternate 0.5ms;
+}
+.animate-text3 {
+  animation: fadeCycle 1s alternate 0.6ms;
+}

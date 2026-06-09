@@ -9,7 +9,7 @@ function VuProjects() {
     <div>
       <div
         onClick={() => route.push("/portfolio")}
-        className=" p-3 cursor-pointer flex justify-center items-center gap-x-1 rounded text-white bg-[#030213]"
+        className=" p-2 text-[0.8rem] cursor-pointer flex justify-center items-center gap-x-1 rounded text-white bg-[#030213]"
       >
         Voir mes projets
         <ArrowBigRight />
