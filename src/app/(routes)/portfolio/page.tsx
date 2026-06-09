@@ -4,7 +4,7 @@ import Project from "@/src/UI/home/Project";
 
 function Portfolio(): React.JSX.Element {
   return (
-    <section className="flex flex-col text-center items-center gap-y-1 pt-[7%] text-black  ">
+    <section className="flex flex-col text-center items-center gap-y-1 pt-[7%]">
       <h1 className="text-5xl md:text-6xl mb-2 font-semibold  animate-text1 ">
         Mes projets
       </h1>

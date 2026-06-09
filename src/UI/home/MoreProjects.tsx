@@ -37,7 +37,7 @@ function MoreProjects() {
 
       <div ref={scroll} className="w-full flex justify-center items-center">
         <div
-          className=" w-[15%] p-2 cursor-pointer rounded text-black text-[0.8rem] outline-1 outline-gray-300"
+          className=" w-[15%] p-2 cursor-pointer rounded  text-[0.8rem] outline-1 outline-gray-300"
           onClick={() => {
             seeProjectsHandler();
           }}

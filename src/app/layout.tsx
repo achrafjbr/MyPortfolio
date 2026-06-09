@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "../UI/Layouts/NavBar";
+import ThemeProvoder from "../context/ThemeProvoder";
+import { Theme, useThemeContext } from "./_types/theme";
+import RootLaoutPage from "../UI/RootLaoutPage";
 
 const roboto = Roboto({
   weight: "400",
@@ -29,11 +32,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={` ${roboto.className}  h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
-        <NavBar />
-        <div className="pt-[1%] px-11">{children}</div>
-      </body>
+    <html lang="en" className={` ${roboto.className}  h-full antialiase`}>
+      <ThemeProvoder>
+        <RootLaoutPage>{children}</RootLaoutPage>
+      </ThemeProvoder>
     </html>
   );
 }

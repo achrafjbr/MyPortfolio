@@ -1,9 +1,15 @@
+"use client";
 import Link from "next/link";
 import { JSX } from "react";
+import DownloadCV from "./DownloadCV";
+import ThemeUi from "./Theme";
+import { Theme, useThemeContext } from "@/src/app/_types/theme";
 
 function NavBar(): JSX.Element {
   return (
-    <div className="  bg-gray-200/5 shadow flex py-6 justify-around font-medium text-gray-500 ">
+    <div
+      className={` bg-gray-200/5 shadow flex py-6 justify-around font-medium text-gray-500 `}
+    >
       <div className="  flex flex-1 justify-center items-center gap-x-4">
         <Link className="hover:text-black" href={"/"}>
           Accueil
@@ -22,9 +28,9 @@ function NavBar(): JSX.Element {
         </Link>
       </div>
 
-      <div className="flex items-center justify-end gap-x-1.5 mr-2">
-        <h1>dowlnlaodcv</h1>
-        <h1>theme</h1>
+      <div className=" cursor-pointer flex items-center justify-end gap-x-3 pr-2">
+        <DownloadCV />
+        <ThemeUi />
       </div>
     </div>
   );
