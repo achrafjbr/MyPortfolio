@@ -1,5 +1,4 @@
-import { Type } from "lucide-react";
-import { Dispatch, SetStateAction, useContext, useState } from "react";
+import { Dispatch, SetStateAction, useContext } from "react";
 import { createContext } from "react";
 
 export enum Theme {
@@ -19,6 +18,5 @@ export const useThemeContext = () => {
   if (!context) {
     throw new Error("useTheme must be used inside ThemeProvider");
   }
-
   return context;
 };

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
-import NavBar from "../UI/Layouts/NavBar";
 import ThemeProvoder from "../context/ThemeProvoder";
-import { Theme, useThemeContext } from "./_types/theme";
 import RootLaoutPage from "../UI/RootLaoutPage";
 
 const roboto = Roboto({

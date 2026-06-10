@@ -1,30 +1,29 @@
-import Image from "next/image";
-import { ICompetence } from "../_types/skills";
+import { ICompetence, Level } from "../_types/skills";
 
 export const frondEndCompetence: ICompetence[] = [
   {
     tech: "React",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/reactjs.png",
   },
   {
     tech: "TypeScript",
-    level: "intermediate",
+    level: Level.INTERMEDIARE,
     image: "/typescript.png",
   },
   {
     tech: "Nextjs",
-    level: "intermediate",
+    level: Level.INTERMEDIARE,
     image: "/nextjs.png",
   },
   {
     tech: "TailwaindCss",
-    level: "intermediate",
+    level: Level.INTERMEDIARE,
     image: "/tailwind.png",
   },
   {
     tech: "HTML/CSS",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/htmlcss.png",
   },
 ];
@@ -32,32 +31,32 @@ export const frondEndCompetence: ICompetence[] = [
 export const BackendCompetence: ICompetence[] = [
   {
     tech: "Node.js",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/nodejs.png",
   },
   {
     tech: "Express.js",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/expressjs.png",
   },
   {
     tech: "PostgreSQL",
-    level: "Débutant",
+    level: Level.DÈBUTANT,
     image: "/postegre.png",
   },
   {
     tech: "MongoDB",
-    level: "intermediate",
+    level: Level.INTERMEDIARE,
     image: "/firebase.png",
   },
   {
     tech: "REST API",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/api.png",
   },
   {
     tech: "GraphQL",
-    level: "débutant",
+    level: Level.DÈBUTANT,
     image: "/graphql.png",
   },
 ];
@@ -65,32 +64,32 @@ export const BackendCompetence: ICompetence[] = [
 export const toolsCompetence: ICompetence[] = [
   {
     tech: "Git",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/git.png",
   },
   {
     tech: "Docker",
-    level: "débutant",
+    level: Level.DÈBUTANT,
     image: "/docker.png",
   },
   {
     tech: "VS Code",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/api.png",
   },
   {
     tech: "Figma",
-    level: "intermediate",
+    level: Level.INTERMEDIARE,
     image: "/figma.png",
   },
   {
     tech: "Postman",
-    level: "avancé",
+    level: Level.AVANCÈ,
     image: "/postman.png",
   },
   {
     tech: "Linux",
-    level: "débutant",
+    level: Level.DÈBUTANT,
     image: "/linux.png",
   },
 ];

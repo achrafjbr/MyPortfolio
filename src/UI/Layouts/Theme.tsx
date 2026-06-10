@@ -1,7 +1,7 @@
 "use client";
 
 import { Theme, useThemeContext } from "@/src/app/_types/theme";
-import { SunMoon } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 
 function ThemeButton() {
   const { theme, setTheme } = useThemeContext();
@@ -11,7 +11,7 @@ function ThemeButton() {
       onClick={() => setTheme(theme == Theme.LIGHT ? Theme.DARK : Theme.LIGHT)}
       className="flex-1"
     >
-      <SunMoon size={25} />
+      {theme == Theme.LIGHT ? <Sun size={25} /> : <Moon size={25} />}
     </span>
   );
 }
